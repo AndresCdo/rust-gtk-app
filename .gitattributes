@@ -1,0 +1,14 @@
+# Linguist overrides.
+#
+# This is a Rust + GTK application, but GitHub reported it as CSS: the two
+# stylesheets below total 23,264 bytes against 18,165 bytes of Rust source,
+# so CSS won the language statistics on byte count alone.
+#
+# Both files are presentation assets rather than application source, so they
+# are excluded from the language statistics.
+
+# Vendored from github-markdown-css (GitHub's own markdown stylesheet).
+src/github-markdown-dark.css linguist-vendored
+
+# Syntax-highlighting theme for the preview pane; not application source.
+src/highlight.css linguist-detectable=false
